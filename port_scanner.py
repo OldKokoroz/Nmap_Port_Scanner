@@ -33,7 +33,7 @@ while True:
     Range of ports you want to scan : <int>-<int>\n
     Enter port range : """)
 
-    port_range_valid = port_range_pattern.search(port_range.replace(" ", " "))
+    port_range_valid = port_range_pattern.search(port_range.replace(" ", ""))
     if port_range_valid:
         port_min = int(port_range_valid.group(1))
         port_max = int(port_range_valid.group(2))
